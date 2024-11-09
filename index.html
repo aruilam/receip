@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Recipe Finder</h1>
+    <p>Enter ingredients or a food name to get recipes and details!</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Enter ingredients or food name..." />
+    <button onclick="searchRecipes()">Search</button>
+  </div>
+
+  <div id="result-container">
+    <h2>Recipe Results:</h2>
+    <div id="recipe-list">
+      <!-- Recipe results will be shown here -->
+    </div>
+
+    <div id="food-details">
+      <!-- Food details will be shown here if a food name is searched -->
+    </div>
+  </div>
+
+  <footer>
+    <p>Powered by Recipe API</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
